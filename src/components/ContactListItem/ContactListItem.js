@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './ContactListItem.module.css';
+
+
 export const ContactListItem = ({ contacts, onDeleteBtn }) => {
   return contacts.map(contact => (
     <li className={css.listItem} key={contact.id}>
