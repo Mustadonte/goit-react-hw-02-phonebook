@@ -19,10 +19,6 @@ export class App extends Component {
 
   formSubmitHandler = data => {
     if (this.state.contacts.find(contact => contact.name === data.name)) {
-      return alert(`Contact f=of ${data.name} is already exist`);
-    }
-
-    if (this.state.contacts.find(contact => contact.number === data.number)) {
       return alert(`Contact of ${data.name} is already exist`);
     }
 
